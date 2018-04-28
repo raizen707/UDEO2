@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UDEO2"
+             x:Class="UDEO2.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0">
+        </OnPlatform>
+    </ContentPage.Padding>
+    <StackLayout>
+        <StackLayout Padding="10">
+            <Label Text="UDEO Photo System" />
+        </StackLayout>
+        <Image Source="https://xamarin.com/content/images/pages/forms/example-app.png" />
+            <Label Text="Imagen de ejemplo UDEO APP 1.0" />
+
+        <StackLayout Orientation="Horizontal" Spacing="20" Padding="10, 0">
+            <Button Text="Me Gusta" />
+            <Button Text="Comentar" />
+            <Button Text="Compartir" />
+        </StackLayout>
+        <StackLayout Padding="10">
+            <BoxView HeightRequest="1" Color="#f0f0f0" />
+            <Label Text="700 likes" FontAttributes="Bold" />
+            <Label TextColor="#444" Text="La Universidad de Occidente basa el núcleo de su filosofía en el respeto y observancia de los derechos y libertades de cada individuo, que según Santo Tomás de Aquino, es la persona humana.
+." />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
